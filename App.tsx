@@ -122,7 +122,7 @@ export default function App() {
     const handleShare = async () => {
         if (!teams) return;
         const skillStars = (skill: PlayerSkill) => '★'.repeat(skillWeights[skill]);
-        let shareText = "🏐 Times de Vôlei 🏐\n\n";
+        let shareText = "🏐 Sorteio dos Viciados 🏐\n\n";
         teams.forEach((team, index) => {
             shareText += `Time ${index + 1}:\n`;
             team.forEach(player => {
@@ -138,7 +138,7 @@ export default function App() {
         try {
             if (navigator.share) {
                 await navigator.share({
-                    title: 'Times de Vôlei',
+                    title: 'Sorteio dos Viciados',
                     text: shareText,
                 });
             } else {
@@ -287,7 +287,7 @@ export default function App() {
                     <div className="flex items-center justify-center gap-4 mb-2">
                       <VolleyballIcon className="w-12 h-12 text-yellow-400"/>
                       <h1 className="text-4xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-white">
-                          Sorteio Vôlei de Praia
+                          Sorteio dos Viciados
                       </h1>
                     </div>
                     <p className="text-lg text-blue-300">Monte times equilibrados para sua partida!</p>
