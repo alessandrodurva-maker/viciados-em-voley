@@ -1,0 +1,5 @@
+{
+  "name": "sorteio de times Viciados",
+  "description": "An intelligent app to organize beach volleyball teams. It allows quick entry of player names, classifies them by skill level (Bom, Médio, Iniciante), and automatically splits them into balanced teams for duplas, trios, or quintetos formats.",
+  "requestFramePermissions": []
+}
